@@ -16,3 +16,4 @@ REST API node js
 - Timestamps
 - Filter & pagination
 - SortBy (asc/desc1)
+- Send email on register
