@@ -1,0 +1,9 @@
+PORT=3000
+EMAIL=email@email.com
+PASSWORD=my_email_password
+
+DB_URL=127.0.0.1
+DB_PORT=27017
+DB_NAME=task-manager-api
+
+JWT_SECRET=supersecret
