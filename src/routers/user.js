@@ -50,16 +50,19 @@ router.post('/users/logoutall', auth, async (req, res) => {
 });
 
 router.get('/users/me', auth, async (req, res) => {
-    res.send(req.user);
-
-    // // /users -> all users
-    // try {
-    //     const users = await User.find({})
-    //     res.send(users)
-    // } catch (e) {
-    //     res.status(500).send()
-    // }
+    res.send(req.user);    
 })
+
+// // Limit and skip
+// router.get('/users', async (req, res) => {
+//     // /users -> all users
+//     try {
+//         const users = await User.find({}).limit(0).skip(0);
+//         res.send(users)
+//     } catch (e) {
+//         res.status(500).send()
+//     }
+// });
 
 router.get('/users/:id', async (req, res) => {
     const _id = req.params.id
